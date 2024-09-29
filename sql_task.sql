@@ -1,7 +1,7 @@
 DECLARE end_dt DATE DEFAULT DATE(current_date);
 DECLARE start_dt DATE DEFAULT DATE_SUB(end_dt, interval 44 day);
 
-CREATE TABLE IF NOT EXISTS your_dataset.your_table(
+CREATE TABLE IF NOT EXISTS your_dataset.your_table (
     app_id STRING,
     app_name STRING,
     platform STRING,
@@ -19,6 +19,6 @@ select
   platform,
   date(date) as date,
   revenue_usd_ as revenue,
-  'DTExchange' as AdNetwork
+  'DTExchange' as adnetwork
 from `your_dataset.your_raw_table`
 where date(Date) between start_dt and end_dt
