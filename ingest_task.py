@@ -53,8 +53,8 @@ start_date = ds + timedelta(days=-44)
 start_date = start_date.strftime('%Y-%m-%d')
 end_date = ds.strftime('%Y-%m-%d')
 
-client_id = os.getenv('client_id.json')
-client_secret = os.getenv('client_secret.json')
+client_id = "your_client_id"
+client_secret = "your_client_secret"
 
 report_params = {
     "source": "mediation",
