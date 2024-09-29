@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobOperator
 from datetime import datetime
-import airflow_example.ingest_task as ingest_task
+import ingest_task
 
 default_args = {
     'owner': 'airflow',
